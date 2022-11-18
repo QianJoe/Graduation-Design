@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JQChoosedViewController">
+            <connections>
+                <outlet property="insteadTakeSwitch" destination="jzA-DM-Mjr" id="ggp-vk-bK1"/>
+                <outlet property="takeFoodLabel" destination="i63-E0-wMk" id="jfI-pC-jxb"/>
+                <outlet property="takeFoodTimeLabel" destination="01V-n6-3MH" id="Zny-mI-8EC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领餐时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-NO-jiw">
+                    <rect key="frame" x="192" y="165" width="85" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="大概的领餐时间" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01V-n6-3MH" customClass="JQDateTextField">
+                    <rect key="frame" x="278" y="160" width="119" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否要求代领：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctt-3S-ju4">
+                    <rect key="frame" x="175" y="210" width="119" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jzA-DM-Mjr">
+                    <rect key="frame" x="313" y="204" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领餐地点：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-Bt-MGc">
+                    <rect key="frame" x="192" y="120" width="85" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第5食堂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i63-E0-wMk">
+                    <rect key="frame" x="279" y="120" width="61.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bln-yv-ZMj">
+                    <rect key="frame" x="284" y="394.5" width="33" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.申请代领有可能需要一定的金额，请您注意。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2L-hB-WVZ">
+                    <rect key="frame" x="133" y="439.5" width="335" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="335" id="BGw-PZ-24K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.点击完成请到我的里面的我的点餐中查看您的点餐信息。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssg-9K-jwR">
+                    <rect key="frame" x="133" y="474" width="335" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-m0-L1B">
+                    <rect key="frame" x="150" y="300.5" width="300" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Adi-kX-Q6e"/>
+                        <constraint firstAttribute="width" constant="300" id="lrb-03-nvV"/>
+                    </constraints>
+                    <state key="normal" title="完成" backgroundImage="btn_full"/>
+                    <connections>
+                        <action selector="finshBtnClick:" destination="-1" eventType="touchUpInside" id="zLL-RJ-WPt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bln-yv-ZMj" firstAttribute="top" secondItem="iIZ-m0-L1B" secondAttribute="bottom" constant="50" id="2Jk-bk-lP1"/>
+                <constraint firstItem="bln-yv-ZMj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="68M-gq-TjU"/>
+                <constraint firstItem="ssg-9K-jwR" firstAttribute="width" secondItem="Z2L-hB-WVZ" secondAttribute="width" id="6RI-Ha-zRo"/>
+                <constraint firstItem="ftJ-Bt-MGc" firstAttribute="centerY" secondItem="i63-E0-wMk" secondAttribute="centerY" id="7nr-Iw-sii"/>
+                <constraint firstItem="i63-E0-wMk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="10" id="8QX-cy-l6n"/>
+                <constraint firstItem="01V-n6-3MH" firstAttribute="centerY" secondItem="PZC-NO-jiw" secondAttribute="centerY" id="BLN-dX-dZ5"/>
+                <constraint firstItem="jzA-DM-Mjr" firstAttribute="leading" secondItem="Ctt-3S-ju4" secondAttribute="trailing" constant="19" id="GDA-Aq-y0N"/>
+                <constraint firstItem="i63-E0-wMk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="N0O-OD-w7w"/>
+                <constraint firstItem="iIZ-m0-L1B" firstAttribute="top" secondItem="Ctt-3S-ju4" secondAttribute="bottom" constant="70" id="Uoh-rF-SkU"/>
+                <constraint firstItem="ssg-9K-jwR" firstAttribute="leading" secondItem="Z2L-hB-WVZ" secondAttribute="leading" id="XCM-1n-Vw0"/>
+                <constraint firstItem="Z2L-hB-WVZ" firstAttribute="centerX" secondItem="bln-yv-ZMj" secondAttribute="centerX" id="af4-MR-mdN"/>
+                <constraint firstItem="jzA-DM-Mjr" firstAttribute="centerY" secondItem="Ctt-3S-ju4" secondAttribute="centerY" id="bqj-km-geb"/>
+                <constraint firstItem="Z2L-hB-WVZ" firstAttribute="top" secondItem="bln-yv-ZMj" secondAttribute="bottom" constant="25" id="jEE-SC-M6f"/>
+                <constraint firstItem="PZC-NO-jiw" firstAttribute="top" secondItem="ftJ-Bt-MGc" secondAttribute="bottom" constant="25" id="mlv-gf-05M"/>
+                <constraint firstItem="Ctt-3S-ju4" firstAttribute="centerX" secondItem="PZC-NO-jiw" secondAttribute="centerX" id="pM8-YU-8zW"/>
+                <constraint firstItem="01V-n6-3MH" firstAttribute="leading" secondItem="PZC-NO-jiw" secondAttribute="trailing" constant="1" id="tnr-i4-EeD"/>
+                <constraint firstItem="iIZ-m0-L1B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wgG-1a-IzG"/>
+                <constraint firstItem="Ctt-3S-ju4" firstAttribute="top" secondItem="PZC-NO-jiw" secondAttribute="bottom" constant="25" id="xyH-aD-EI0"/>
+                <constraint firstItem="i63-E0-wMk" firstAttribute="leading" secondItem="ftJ-Bt-MGc" secondAttribute="trailing" constant="2" id="y3z-9G-zcb"/>
+                <constraint firstItem="PZC-NO-jiw" firstAttribute="leading" secondItem="ftJ-Bt-MGc" secondAttribute="leading" id="zQN-rc-vdw"/>
+                <constraint firstItem="ssg-9K-jwR" firstAttribute="top" secondItem="Z2L-hB-WVZ" secondAttribute="bottom" constant="15" id="zgC-rq-bjg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_full" width="300" height="45"/>
+    </resources>
+</document>

@@ -1,0 +1,19 @@
+{
+    "foodTotalData":[
+                    {
+                    "image":"eq",
+                    "name":"dasd",
+                    "money":"20"
+                    },
+                    {
+                    "image":"qe",
+                    "name":"qwe",
+                    "money":"32"
+                    },
+                    {
+                    "image":"qew",
+                    "name":"3131",
+                    "money":"13"
+                    }
+                    ]
+}

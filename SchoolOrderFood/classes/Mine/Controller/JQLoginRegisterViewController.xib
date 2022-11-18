@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JQLoginRegisterViewController">
+            <connections>
+                <outlet property="middleLeadingCons" destination="v3T-Fd-7Ge" id="2mQ-MP-Rzb"/>
+                <outlet property="middleView" destination="Dgo-fU-yy8" id="vyb-ax-oCO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9k-3a-FWG" userLabel="TOP">
+                    <rect key="frame" x="0.0" y="20" width="375" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuj-sI-2EN">
+                            <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="PBe-Vf-Ei7"/>
+                            </constraints>
+                            <state key="normal" image="close_icon"/>
+                            <state key="highlighted" image="close_icon_highlighted"/>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="spU-Se-nBd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ka-CQ-jxm">
+                            <rect key="frame" x="288" y="0.0" width="77" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="77" id="E61-rk-8uK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="注册账号">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="已有账号？"/>
+                            <connections>
+                                <action selector="clickRegister:" destination="-1" eventType="touchUpInside" id="lTH-jk-QmF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5Ka-CQ-jxm" firstAttribute="top" secondItem="k9k-3a-FWG" secondAttribute="top" id="0a9-E6-j8Q"/>
+                        <constraint firstItem="Vuj-sI-2EN" firstAttribute="leading" secondItem="k9k-3a-FWG" secondAttribute="leading" constant="10" id="29g-0W-IfH"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ka-CQ-jxm" secondAttribute="bottom" id="BFi-2u-s8Y"/>
+                        <constraint firstAttribute="bottom" secondItem="Vuj-sI-2EN" secondAttribute="bottom" id="F0W-bU-pPo"/>
+                        <constraint firstAttribute="height" constant="35" id="FAR-Of-dW1"/>
+                        <constraint firstItem="Vuj-sI-2EN" firstAttribute="top" secondItem="k9k-3a-FWG" secondAttribute="top" id="Ub9-oj-QoI"/>
+                        <constraint firstAttribute="trailing" secondItem="5Ka-CQ-jxm" secondAttribute="trailing" constant="10" id="akM-uh-rvd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgo-fU-yy8" userLabel="MID">
+                    <rect key="frame" x="0.0" y="115" width="1125" height="350"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="Gnb-q5-RXc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k9k-3a-FWG" secondAttribute="trailing" id="DMH-Nd-3lH"/>
+                <constraint firstItem="Dgo-fU-yy8" firstAttribute="top" secondItem="k9k-3a-FWG" secondAttribute="bottom" constant="60" id="DN7-1b-QUB"/>
+                <constraint firstItem="k9k-3a-FWG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kgf-re-enI"/>
+                <constraint firstAttribute="trailing" secondItem="Dgo-fU-yy8" secondAttribute="trailing" id="acB-T6-rqZ"/>
+                <constraint firstItem="Dgo-fU-yy8" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3" id="rWO-pL-Sg2"/>
+                <constraint firstItem="k9k-3a-FWG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="uBk-ca-5Q7"/>
+                <constraint firstItem="Dgo-fU-yy8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v3T-Fd-7Ge"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="acB-T6-rqZ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <image name="close_icon_highlighted" width="24" height="24"/>
+    </resources>
+</document>

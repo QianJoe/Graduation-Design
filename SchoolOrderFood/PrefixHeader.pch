@@ -1,0 +1,71 @@
+#ifdef __OBJC__
+
+
+#ifdef DEBUG
+
+#define JQLOG(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define JQLOG(...)
+
+#endif
+
+#endif
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "NSString+Extension.h"
+
+#define JQLOGFUNC JQLOG(@"%s", __func__)
+
+#define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define VIEWWIDTH self.frame.size.width
+#define IMP_BLOCK_SELF(type) __weak type *block_self=self;
+// 通知
+#define JQNotification [NSNotificationCenter defaultCenter]
+#define JQFoodChangedNotification @"JQFoodChangedNotification"
+#define JQShopCarFoodRemoveNotification @"JQShopCarFoodRemoveNotification"
+#define JQTableViewRemoveModelNotification @"JQTableViewRemoveModelNotification"
+// 待取餐的section的headtitle
+#define waitForTakeFoodHeadTitleArray @[@"已取餐的", @"待取餐的"]
+#define waitForTakeFoodHeadColorArray @[@"F38631", @"20B1FA"]
+
+// 早中晚的section的headtitle
+#define weekHeadTitleArray @[@"早餐", @"午餐", @"晚餐"]
+#define weekHeadColorArray @[@"F38631", @"20B1FA", @"FF3319"]
+
+// 字体
+#define oldPriceFont [UIFont systemFontOfSize:12.0]
+#define newPriceFont [UIFont systemFontOfSize:13.0]
+#define titleFont [UIFont systemFontOfSize:16.0]
+#define titleBoldFont [UIFont systemFontOfSize:16.0]
+
+// 颜色
+#define JQColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define colorFloat(colorInt) (colorInt)/255.0
+
+// commit颜色
+#define CommitColor [UIColor colorWithRed:0.992 green:0.831 blue:0.192 alpha:1.000]
+
+// tabbar的颜色
+#define tabbarTitleSelectedColor JQColor(254, 153, 54, 1.0)
+#define tabbarTitleColor JQColor(155, 155, 155, 1.0)
+// navigation的黄色
+#define naviColor JQColor(255, 214, 0, 1.0)
+#define naviColorAlp JQColor(255, 214, 0, 0.3)
+#define foodColor JQColor(228, 241, 250, 1.0)
+// 背景颜色
+#define BackgroundColor JQColor(233, 233, 233, 1.0)
+#define PublicBgColor JQColor(252, 252, 252, 1.0)
+
+#define JQGrayColor JQColor(239, 239, 239, 1.0)
+#define JQFontColor JQColor(139, 84, 63, 1.0)
+#define JQHeavyGreen JQColor(124, 189, 64, 1.0)
